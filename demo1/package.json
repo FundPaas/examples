@@ -10,6 +10,7 @@
     "react-dom": "^15.5.4"
   },
   "scripts": {
+    "demo": "PORT=3001 npm start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
