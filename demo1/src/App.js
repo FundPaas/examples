@@ -7,8 +7,12 @@ class App extends Component {
       <div className='App'>
         <div className='App__Hero'>
           <div className='App__Hero__Button-Group'>
-            <button className='App__Button'>Learn More</button>
-            <button className='App__Button'>Invest</button>
+            <button className='App__Button'>LEARN MORE</button>
+            <button className='App__Button fundpaas-widget-invOn__investButton'
+                    type="button" 
+                    data-offering-id="INVOFF-9P51M2VDU7U8I" 
+                    disabled
+            >INVEST</button>
           </div>
         </div>
       </div>

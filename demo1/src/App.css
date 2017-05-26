@@ -40,3 +40,7 @@
   position: relative;
   top: 2px;
 }
+
+.App__Button:disabled {
+  color: #000;
+}
