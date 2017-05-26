@@ -23,7 +23,7 @@ class App extends Component {
               <button className='App__Button'>LEARN MORE</button>
               <button className='App__Button fundpaas-widget-invOn__investButton'
                       type="button" 
-                      data-offering-id="INVOFF-495HM68QL2CNC" 
+                      data-offering-id="INVOFF-7QQFGEJINNUK2" 
                       disabled
               >INVEST</button>
             </div>
