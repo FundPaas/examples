@@ -7,7 +7,8 @@
   },
   "dependencies": {
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-responsive-image": "^3.3.5"
   },
   "scripts": {
     "demo": "PORT=3001 npm start",

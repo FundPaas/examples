@@ -6,8 +6,8 @@ html, body, #root, .App {
   font-family:'optimus-princeps';
   font-weight: normal;
   font-style: normal;
-  src: url('./assets/fonts/optimus-princeps/optimusprincepssemibold-webfont.woff2') format('woff2'),
-       url('./assets/fonts/optimus-princeps/optimusprincepssemibold-webfont.woff') format('woff');
+  src: url('/assets/fonts/optimus-princeps/optimusprincepssemibold-webfont.woff2') format('woff2'),
+       url('/assets/fonts/optimus-princeps/optimusprincepssemibold-webfont.woff') format('woff');
 }
 
 body {
@@ -17,4 +17,8 @@ body {
   position: relative;
   background-color: #000;
   font-family: 'optimus-princeps';
+}
+
+img {
+  width: 100%;
 }

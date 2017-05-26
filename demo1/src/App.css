@@ -7,23 +7,29 @@
 .App__Hero {
   width: 100%;
   height: 100%;
-  background-size: contain;
-  background-image: url('./assets/images/banner.png');
-  background-repeat: no-repeat;
-  background-position: center center;
   position: relative;
+}
+
+.App__Hero-Banner-Group {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  left: 0;
 }
 
 .App__Hero__Button-Group {
   position: absolute;
-  top: 50%;
-  left: 20%;
+  top: 60%;
+  left: 0;
+  right: 0;
+  width: 65%;
 }
 
 .App__Button {
   background: linear-gradient(to bottom,  #eedb8c 0%,#ca9f56 49%,#b59444 100%);
-  font-size: 14px;
-  width: 130px;
+  font-size: 16px;
+  width: 145px;
   height: 50px;
   margin: 0 10px;
   border-radius: 3px;
@@ -43,4 +49,21 @@
 
 .App__Button:disabled {
   color: #000;
+}
+
+@media (max-width: 1200px) {
+  .App__Hero-Banner-Group {
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+  }
+
+  .App__Hero-Banner-Group img {
+    width: auto;
+  }
+
+  .App__Hero__Button-Group {
+    min-width: 1020px; 
+    width: 100%;
+  }
 }
