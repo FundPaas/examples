@@ -128,7 +128,7 @@
 #FUNDPAAS-CSS .invOn-workflowStepsView nav div,
 #FUNDPAAS-CSS .fundpaas-core-link, #FUNDPAAS-CSS a:link, #FUNDPAAS-CSS a:visited {
   font-family: 'rufina', sans-serif;
-  color: #000;
+  color: #fff;
   border-bottom: none;
 }
 
@@ -151,7 +151,6 @@
 #FUNDPAAS-CSS .invOn-workflowStepsView nav button, 
 #FUNDPAAS-CSS .invOn-loginAsideView nav div, 
 #FUNDPAAS-CSS .invOn-workflowStepsView nav div {
-  color: #fff;
   text-transform: uppercase;
 }
 
@@ -193,14 +192,15 @@
   font-family: 'rufina', sans-serif;
 }
 
+#FUNDPAAS-CSS .invOn-footerRegionView .fundpaas-core-link,
 #FUNDPAAS-CSS .invOn-footerRegionView a:link, 
-#FUNDPAAS-CSS .invOn-footerRegionView .fundpaas-core-link {
+#FUNDPAAS-CSS .invOn-footerRegionView a:visited {
   color: #000;
 }
 
+#FUNDPAAS-CSS .invOn-footerRegionView .fundpaas-core-link:hover,
 #FUNDPAAS-CSS .invOn-footerRegionView a:hover, 
-#FUNDPAAS-CSS .invOn-footerRegionView .fundpaas-core-link:hover {
-  text-decoration: underline;
+#FUNDPAAS-CSS .invOn-footerRegionView a:hover {
   color: #fa8e2a;
 }
 
@@ -215,6 +215,17 @@
 
 #FUNDPAAS-CSS .invOn-footerRegionView .fundpaas-copyright-company:after {
   content: "ONE ROQ";
+}
+
+/*
+invOn-investorTypeView__choiceContainer
+ */
+#FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer .fundpaas-core-link {
+  color: #000;
+}
+
+#FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer .fundpaas-core-link:hover {
+  color: #fa8e2a;
 }
 
 /*
