@@ -27,8 +27,6 @@ class App extends Component {
                       data-offering-id="INVOFF-7QQFGEJINNUK2" 
                       disabled
               >INVEST</button>
-
-             
              {/*<button className='App__Button'>INVEST</button>*/}
             </div>
           </div>
