@@ -21,14 +21,24 @@ class App extends Component {
             </ResponsiveImage>
             <div className='App__Hero__Button-Group'>
               <button className='App__Button'>LEARN MORE</button>
+            {/* fmb */}
               <button className='App__Button fundpaas-widget-invOn__investButton'
                       type="button" 
                       data-offering-id="INVOFF-7QQFGEJINNUK2" 
                       disabled
               >INVEST</button>
+
+             
+             {/*<button className='App__Button'>INVEST</button>*/}
             </div>
           </div>
         </div>
+        {/* inline */}
+        {/*
+        <div className="App__Inline-FMB">
+          <div className="fundpaas-widget-invOn__inlineContainer" data-offering-id="INVOFF-7QQFGEJINNUK2"></div>
+        </div>
+        */}
       </div>
     );
   }
