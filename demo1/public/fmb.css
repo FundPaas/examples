@@ -178,13 +178,6 @@ Links
   border-bottom-color: none;
 }
 
-#FUNDPAAS-CSS .invOn-loginAsideView nav a, 
-#FUNDPAAS-CSS .invOn-workflowStepsView nav a, 
-#FUNDPAAS-CSS .invOn-loginAsideView nav button, 
-#FUNDPAAS-CSS .invOn-workflowStepsView nav button {
-  text-transform: uppercase;
-}
-
 /*
 Input fields
  */
@@ -247,6 +240,7 @@ Table
   border-radius: 0;
 }
 
+#FUNDPAAS-CSS table.fundpaas-core-form tbody td,
 #FUNDPAAS-CSS .fundpaas-core-form tbody td label {
   color: #000;
   font-family: 'rufina', sans-serif;
