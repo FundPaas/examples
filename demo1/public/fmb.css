@@ -82,7 +82,8 @@
  */
 
 #FUNDPAAS-CSS .invOn-initialPageView button, 
-#FUNDPAAS-CSS .invOn-investorTypeView__additionalChoices {
+#FUNDPAAS-CSS .invOn-investorTypeView__additionalChoices, 
+#FUNDPAAS-CSS .fundpaas-core-form__controls button[type='submit'] {
   background: linear-gradient(to bottom, #eedb8c 0%, #ca9f56 49%, #b59444 100%);
   font-size: 13px;
   border: none;
@@ -93,7 +94,8 @@
 }
 
 #FUNDPAAS-CSS .invOn-initialPageView button:hover,
-#FUNDPAAS-CSS .invOn-investorTypeView__additionalChoices:hover {
+#FUNDPAAS-CSS .invOn-investorTypeView__additionalChoices:hover,
+#FUNDPAAS-CSS .fundpaas-core-form__controls button[type='submit']:hover {
   background: linear-gradient(to bottom, #b59444 0%, #ca9f56 49%);
   cursor: pointer;
 }
@@ -130,6 +132,7 @@
   font-family: 'rufina', sans-serif;
   color: #fff;
   border-bottom: none;
+  text-decoration: underline;
 }
 
 #FUNDPAAS-CSS .invOn-loginAsideView nav a:hover, 
@@ -139,7 +142,6 @@
 #FUNDPAAS-CSS .invOn-loginAsideView nav div:hover, 
 #FUNDPAAS-CSS .invOn-workflowStepsView nav div:hover,
 #FUNDPAAS-CSS .fundpaas-core-link:hover, #FUNDPAAS-CSS a:hover, #FUNDPAAS-CSS a:hover {
-  text-decoration: underline;
   background-color: transparent;
   color: #fa8e2a;
   border-bottom-color: none;
@@ -155,8 +157,19 @@
 }
 
 /*
-  Input field
+  Input fields
  */
+
+#FUNDPAAS-CSS input[type=text]:focus, 
+#FUNDPAAS-CSS input[type=email]:focus, 
+#FUNDPAAS-CSS input[type=tel]:focus, 
+#FUNDPAAS-CSS input[type=url]:focus, 
+#FUNDPAAS-CSS input[type=date]:focus, 
+#FUNDPAAS-CSS input[type=password]:focus, 
+#FUNDPAAS-CSS select:focus, 
+#FUNDPAAS-CSS textarea:focus {
+  box-shadow: inset 0 0 0 1px #fa8e2a;
+}
 
 /*
   Header
