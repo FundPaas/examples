@@ -35,10 +35,11 @@
   border-radius: 3px;
   border: none;
   letter-spacing: 1px;
-  font-family: 'nevis';
+  font-family: 'nevis', sans-serif;
 }
 
 .App__Button:hover {
+  background: linear-gradient(to bottom, #b59444 0%, #ca9f56 49%);
   cursor: pointer;
 }
 

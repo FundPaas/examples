@@ -18,13 +18,21 @@ html, body, #root, .App {
        url('/assets/fonts/nevis/nevis-webfont.woff') format('woff');
 }
 
+@font-face {
+  font-family:'rufina';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/assets/fonts/rufina/rufina-regular-webfont.woff2') format('woff2'),
+       url('/assets/fonts/rufina/rufina-regular-webfont.woff') format('woff');
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
   position: relative;
   background-color: #000;
-  font-family: 'nevis';
+  font-family: 'rufina', sans-serif;
 }
 
 img {

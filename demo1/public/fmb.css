@@ -41,10 +41,60 @@
 /*
   Font / Text
  */
+#FUNDPAAS-CSS .invOn-oneColumnLayoutView .invOn-oneColumnLayoutView__mainContentRegion h1,
+#FUNDPAAS-CSS .invOn-offeringProgressView [name=offeringSubscribedAmountPercentage],
+#FUNDPAAS-CSS .invOn-offeringProgressView {
+  color: #eedb8c;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: 'Nevis',sans-serif;  
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#FUNDPAAS-CSS .fundpaas-core-layout--2column {
+  color: #fff;
+  font-family: 'rufina', sans-serif;
+  font-size: 13px;
+}
+
+#FUNDPAAS-CSS .invOn-offeringProgressView .invOn-offeringProgressView__offeringProgress__meters {
+  background: #000;
+  border: 1px solid #f7f7f7;
+}
+
+#FUNDPAAS-CSS .invOn-offeringProgressView [name=offeringSubscribedAmountPercentage],
+#FUNDPAAS-CSS .invOn-offeringProgressView {
+  font-size: 11px;
+}
+
+#FUNDPAAS-CSS .invOn-offeringProgressView [name=offeringSubscribedAmountPercentage] {
+  line-height: 36px;
+}
 
 /*
   Button
  */
+
+#FUNDPAAS-CSS .invOn-initialPageView button {
+  background: linear-gradient(to bottom, #eedb8c 0%, #ca9f56 49%, #b59444 100%);
+  font-size: 13px;
+  border: none;
+  letter-spacing: 1px;
+  font-family: 'nevis', sans-serif;
+  color: #000;
+  text-transform: uppercase;
+}
+
+#FUNDPAAS-CSS .invOn-initialPageView button:hover {
+  background: linear-gradient(to bottom, #b59444 0%, #ca9f56 49%);
+  cursor: pointer;
+}
+
+#FUNDPAAS-CSS .invOn-initialPageView button:active {
+  position: relative;
+  top: 2px;
+}
 
 /* x button */
 /* https://codepen.io/yoksel/details/JDqvs/ */
@@ -61,6 +111,15 @@
   Links
  */
 
+#FUNDPAAS-CSS .fundpaas-core-link, #FUNDPAAS-CSS a:link, #FUNDPAAS-CSS a:visited {
+  font-family: 'rufina', sans-serif;
+  color: #000;
+}
+
+#FUNDPAAS-CSS .fundpaas-core-link:hover, #FUNDPAAS-CSS a:hover, #FUNDPAAS-CSS a:hover {
+  text-decoration: underline;
+}
+
 /*
   Input field
  */
@@ -76,3 +135,38 @@
 /*
   Footer
  */
+
+#FUNDPAAS-CSS .invOn-oneColumnLayoutView__footerRegion, 
+#FUNDPAAS-CSS .invOn-twoColumnLayoutView__footerRegion {
+  padding: 10px;
+  height: 36px;
+  background-color: #f7f7f7;
+  border-top: none;
+}
+
+#FUNDPAAS-CSS .invOn-footerRegionView {
+  font-family: 'rufina', sans-serif;
+}
+
+#FUNDPAAS-CSS .invOn-footerRegionView a:link, 
+#FUNDPAAS-CSS .invOn-footerRegionView .fundpaas-core-link {
+  color: #000;
+}
+
+#FUNDPAAS-CSS .invOn-footerRegionView a:hover, 
+#FUNDPAAS-CSS .invOn-footerRegionView .fundpaas-core-link:hover {
+  text-decoration: underline;
+}
+
+#FUNDPAAS-CSS .invOn-footerRegionView .fundpaas-copyright-company span,
+#FUNDPAAS-CSS .invOn-footerRegionView .fundpaas-copyright-year span {
+  display: none;
+}
+
+#FUNDPAAS-CSS .invOn-footerRegionView .fundpaas-copyright-year:after {
+  content: "2017";
+}
+
+#FUNDPAAS-CSS .invOn-footerRegionView .fundpaas-copyright-company:after {
+  content: "ONE ROQ";
+}
