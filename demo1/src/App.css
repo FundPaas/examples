@@ -52,19 +52,6 @@
   color: #000;
 }
 
-.App__Button a, 
-.App__Button a:link,
-.App__Button a:hover,
-.App__Button a:visited, 
-.App__Button a:active {
-  color: #000;
-  text-decoration: none;
-}
-
-.App__Button a:focus {
-  outline: 0;
-}
-
 @media (max-width: 1200px) {
   .App__Hero-Banner-Group {
     position: relative;

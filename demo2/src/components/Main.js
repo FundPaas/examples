@@ -19,12 +19,12 @@ class Main extends Component{
                 path={'./assets/images/banner.png'}
               />
             </ResponsiveImage>
-            <div className='App__Hero__Button-Group'>
-              <button className='App__Button'>
-                <a href="https://www.facebook.com/oneroq/" 
-                   rel="noopener noreferrer"
-                   target='_blank'>LEARN MORE</a>
-              </button>
+            <div className='App__Hero__Button-Group'>              
+              <a href="https://www.facebook.com/oneroq/" 
+                 rel="noopener noreferrer"
+                 target='_blank'>
+                 <button className='App__Button'>LEARN MORE</button>
+              </a>
             {/* fmb */}
               <button className='App__Button fundpaas-widget-invOn__investButton'
                       type="button" 
