@@ -98,6 +98,14 @@ Font / Text
   line-height: 36px;
 }
 
+#FUNDPAAS-CSS .invOn-offeringProgressView meter {
+  top: 1px;
+}
+
+#FUNDPAAS-CSS .invOn-offeringProgressView meter.is-normal {
+  background: #df68ca;
+}
+
 /*
 Button
  */
@@ -245,6 +253,10 @@ Table
   background: #f7f7f7;
 }
 
+#FUNDPAAS-CSS table.fundpaas-core-table--recordList thead tr {
+  background: #ffffe0;
+}
+
 #FUNDPAAS-CSS table.fundpaas-core-table--lightBackdrop thead tr {
   color: #000;
 }
@@ -256,7 +268,8 @@ Table
 #FUNDPAAS-CSS table.fundpaas-core-form tbody td,
 #FUNDPAAS-CSS .fundpaas-core-form tbody td label, 
 #FUNDPAAS-CSS table.fundpaas-core-table--recordList thead tr,
-#FUNDPAAS-CSS table.fundpaas-core-table--recordList tbody tr td {
+#FUNDPAAS-CSS table.fundpaas-core-table--recordList tbody tr td,
+#FUNDPAAS-CSS table.fundpaas-core-table--recordList tbody tr td a{
   color: #000;
   font-family: 'rufina', sans-serif;
 }
@@ -457,7 +470,7 @@ invOn-signAgreementView
   margin-top: 15px;
 }
 
-#FUNDPAAS-CSS .fundpaas-core__checkboxRegionView label,
+#FUNDPAAS-CSS .invOn-signAgreementView__agreementText .fundpaas-core__checkboxRegionView label,
 #FUNDPAAS-CSS [data-template-include="fundpaas-core-coreTemplates-signatureView"] {
   background-color: #f7f7f7;
   color: #000;
@@ -467,4 +480,12 @@ invOn-signAgreementView
 
 #FUNDPAAS-CSS [data-template-include="fundpaas-core-coreTemplates-signatureView"] p {
   color: #000; 
+}
+
+/*
+invOn-confirmationView
+ */
+
+#FUNDPAAS-CSS .invOn-confirmationView__socialMedia {
+  margin-top: 15px;
 }
