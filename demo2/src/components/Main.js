@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+// import { Link } from 'react-router';
 import { ResponsiveImage, ResponsiveImageSize } from 'react-responsive-image';
 
 class Main extends Component{
   render(){
     return (
-      <div>
+      <div className='App__Container'>
         <div className='App__Hero'>
           <div className="App__Hero-Banner-Group">
             <ResponsiveImage>

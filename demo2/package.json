@@ -1,15 +1,20 @@
 {
-  "name": "demo1",
+  "name": "demo2",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-scripts": "1.0.6"
+    "react-scripts": "1.0.7"
   },
   "dependencies": {
     "lodash": "^4.17.4",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-responsive-image": "^3.3.5"
+    "react-redux": "^5.0.5",
+    "react-responsive-image": "^3.3.5",
+    "react-router": "^2.8.0",
+    "redux": "^3.6.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0"
   },
   "scripts": {
     "demo": "PORT=3001 npm start",
