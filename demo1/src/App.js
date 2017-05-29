@@ -21,7 +21,9 @@ class App extends Component {
             </ResponsiveImage>
             <div className='App__Hero__Button-Group'>
               <button className='App__Button'>
-                <a href="https://www.facebook.com/oneroq/" target='_blank'>LEARN MORE</a>
+                <a href="https://www.facebook.com/oneroq/" 
+                   rel="noopener noreferrer"
+                   target='_blank'>LEARN MORE</a>
               </button>
             {/* fmb */}
               <button className='App__Button fundpaas-widget-invOn__investButton'
