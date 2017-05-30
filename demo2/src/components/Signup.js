@@ -79,16 +79,53 @@ class Signup extends Component{
     payloadData.append("investor", JSON.stringify(investor));
     
     if(!validationMessage) {
+      /*        
+      LOGIN_ID: "FUNDPAAS.lId",
+      LOGIN_TYPE: "FUNDPAAS.lTy",
+      PERSON_ID: "FUNDPAAS.pId",
+      
+       * We store the session id in LocalStorage rather than SessionStorage because in the persistent case,
+       * the user might leave the browser and come back later.
+       * For transient sessions, they'll still be valid for a period of 24 hours (currently set by the server).
+       
+      SESSION_ID: "FUNDPAAS.sId",
+      NEW_SESSION_ID: "FUNDPAAS.sIdN",
+      SESSION_ID_TYPE: "FUNDPAAS.sIT",
+
+      
+       * Header value from com.fundpaas.ws.core.CLIENT_SIDE_NOW
+       
+      CLIENT_SIDE_NOW: "FUNDPAAS.cSN"
+      */
+
+      var sId = null;
+      // can do call client api here before fundpaas api
       fetch('http://local.fundpaas.com:8080/api/logins/signups/investors', {
         method: 'POST',
         body: payloadData
       })
-      .then(promise => promise.json())
+      .then(status => {
+        status.headers.forEach((value, key) => {
+          if(key === 'fundpaas.sidn') {
+            sId = value;
+          }
+        });
+        
+        return status.json();
+      })
       .then((response) => {
         console.log(response);
-        this.setState({
-          errorMessage: response.customerMessage
-        });
+        if(response.responseCode.startsWith('2')) {
+          localStorage.setItem('FUNDPAAS.lId', response.loginId);
+          localStorage.setItem('FUNDPAAS.lTy', response.loginType);
+          localStorage.setItem('FUNDPAAS.pId', response.personId);
+          localStorage.setItem('FUNDPAAS.sId', sId);
+          localStorage.setItem('FUNDPAAS.sIT', 'P');
+        }else {
+          this.setState({
+            errorMessage: response.customerMessage
+          });
+        }
       })
       .catch((error) => {
         console.log(error);
