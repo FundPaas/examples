@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { Link, browserHistory } from 'react-router';
 import { isEmpty } from 'lodash';
 
 class Signup extends Component{
@@ -121,6 +121,8 @@ class Signup extends Component{
           localStorage.setItem('FUNDPAAS.pId', response.personId);
           localStorage.setItem('FUNDPAAS.sId', sId);
           localStorage.setItem('FUNDPAAS.sIT', 'P');
+
+          browserHistory.push('/invest');
         }else {
           this.setState({
             errorMessage: response.customerMessage

@@ -98,7 +98,7 @@
   cursor: pointer;
 }
 
-.App__Signup {
+.App__Signup, .App__Invest {
   color: #fff;
   font-family: 'rufina', sans-serif;
   max-width: 710px;
@@ -106,7 +106,7 @@
   margin: 50px auto;
 }
 
-.App__Signup h1 {
+.App__Signup h1, .App__Invest h1 {
   text-align: left;
   color: #eedb8c;
   font-size: 24px;
