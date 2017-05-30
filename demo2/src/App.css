@@ -123,7 +123,7 @@
   font-family: 'rufina', sans-serif;
   font-size: 13px;
   color: rgb(34, 34, 34);
-  display: none;
+  text-align: left;
 }
 
 .App__Signup__Form {
@@ -219,6 +219,7 @@
   padding-left: 5px;
   border: none;
   outline: none;
+  font-family: 'rufina', sans-serif;
 }
 
 .App__Signup__Form__Upload-File input {
