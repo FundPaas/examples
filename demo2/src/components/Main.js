@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router';
+import { Link } from 'react-router';
 import { ResponsiveImage, ResponsiveImageSize } from 'react-responsive-image';
 
 class Main extends Component{
@@ -26,11 +26,9 @@ class Main extends Component{
                  <button className='App__Button'>LEARN MORE</button>
               </a>
             {/* fmb */}
-              <button className='App__Button fundpaas-widget-invOn__investButton'
-                      type="button" 
-                      data-offering-id="INVOFF-7QQFGEJINNUK2" 
-                      disabled
-              >INVEST</button>
+              <Link to='/signup'>
+                <button className='App__Button'>INVEST</button>
+              </Link>
              {/*<button className='App__Button'>INVEST</button>*/}
             </div>
           </div>

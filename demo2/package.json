@@ -17,7 +17,7 @@
     "redux-thunk": "^2.2.0"
   },
   "scripts": {
-    "demo": "PORT=3001 npm start",
+    "demo": "PORT=3002 npm start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
