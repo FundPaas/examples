@@ -310,6 +310,16 @@ Sidebar
   color: #fff;
 }
 
+#FUNDPAAS-CSS .invOn-loginAsideView nav a[name=myPortal], 
+#FUNDPAAS-CSS .invOn-workflowStepsView nav a[name=myPortal],
+#FUNDPAAS-CSS .invOn-loginAsideView nav a[name=aboutFundpaas], 
+#FUNDPAAS-CSS .invOn-workflowStepsView nav a[name=aboutFundpaas],
+#FUNDPAAS-CSS .invOn-loginAsideView nav button[name=help], 
+#FUNDPAAS-CSS .invOn-workflowStepsView nav button[name=help] {
+  display: none;
+}
+
+
 /*
 Footer
  */
@@ -347,10 +357,11 @@ Footer
 #FUNDPAAS-CSS .invOn-footerRegionView .fundpaas-copyright-year:after {
   content: "2017";
 }
-
+/*
 #FUNDPAAS-CSS .invOn-footerRegionView .fundpaas-copyright-company:after {
   content: "ONE ROQ";
 }
+*/
 
 /*
 invOn-investorTypeView__choiceContainer
@@ -368,7 +379,7 @@ invOn-investorTypeView
  */
 
 #FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer {
-  background-color: #f7f7f7; 
+  background-color: #f7f7f7;
 }
 
 #FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer p {
@@ -381,6 +392,76 @@ invOn-investorTypeView
 
 #FUNDPAAS-CSS .invOn-investorTypeView__additionalChoices {
   font-size: 10px;
+}
+
+#FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer {
+  background-color: #222;
+  width: 100%;
+  position: relative;
+}
+
+#FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer:hover {
+  background-color: #222;
+}
+
+#FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer.invOn-investorTypeView__choice,
+#FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer img,
+#FUNDPAAS-CSS .invOn-investorTypeView__additionalChoices {
+  display: none;
+}
+
+#FUNDPAAS-CSS .invOn-investorTypeView__accreditedInvestorDefinition {
+  display: block;
+}
+
+#FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer .fundpaas-core-link[data-value='PA'] {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer .fundpaas-core-link[data-value='PN'] {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer .fundpaas-core-link {
+  background: linear-gradient(to bottom, #eedb8c 0%, #ca9f56 49%, #b59444 100%);
+  font-size: 13px;
+  border: none;
+  letter-spacing: 1px;
+  font-family: 'nevis', sans-serif;
+  color: #000;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: none;
+  text-decoration: none;
+  height: 60px;
+  padding: 10px 20px;
+  width: 300px;
+  line-height: 60px;
+  display: inline-block;
+}
+
+#FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer .fundpaas-core-link:hover {
+  background: linear-gradient(to bottom, #b59444 0%, #ca9f56 49%);
+  cursor: pointer;
+  color: #000;
+}
+
+#FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer .fundpaas-core-link:active {
+  positive: relative;
+  top: 2px;
+}
+
+#FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer {
+  height: auto;
+}
+
+#FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer>div {
+  height: auto;
+  min-height: auto;
 }
 
 /*
