@@ -7,7 +7,8 @@ class Signup extends Component{
     super(props);
     this.state = {
       fileName: "",
-      errorMessage: ""
+      errorMessage: "",
+      isLoading: false
     };
   }
 
@@ -99,6 +100,9 @@ class Signup extends Component{
       */
 
       var sId = null;
+      this.setState({
+        isLoading: true
+      });
       // can do call client api here before fundpaas api
       fetch('http://local.fundpaas.com:8080/api/logins/signups/investors', {
         method: 'POST',
@@ -125,19 +129,22 @@ class Signup extends Component{
           browserHistory.push('/invest');
         }else {
           this.setState({
-            errorMessage: response.customerMessage
+            errorMessage: response.customerMessage,
+            isLoading: false
           });
         }
       })
       .catch((error) => {
         console.log(error);
         this.setState({
-          errorMessage: 'Failed to sent data. Please contact support.'
+          errorMessage: 'Failed to sent data. Please contact support.',
+          isLoading: false
         });
       });
     }else {
       this.setState({
-        errorMessage: validationMessage
+        errorMessage: validationMessage,
+        isLoading: false
       });
     }
   }
@@ -251,6 +258,10 @@ class Signup extends Component{
             <button type='submit'>Continue</button>
           </div>
         </form>
+        <div className={this.state.isLoading ? 'App__Spinner' : 'App__Component--Hidden'}></div>
+        <div className={this.state.isLoading ? 'App__Overlay' : 'App__Component--Hidden'}>
+          <p>This process will take a few minutes, please do not close the browser.</p>
+        </div>
       </div>
     );
   }

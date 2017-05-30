@@ -98,7 +98,7 @@
   cursor: pointer;
 }
 
-.App__Signup, .App__Invest {
+.App__Signup {
   color: #fff;
   font-family: 'rufina', sans-serif;
   max-width: 710px;
@@ -106,7 +106,7 @@
   margin: 50px auto;
 }
 
-.App__Signup h1, .App__Invest h1 {
+.App__Signup h1 {
   text-align: left;
   color: #eedb8c;
   font-size: 24px;
@@ -288,4 +288,204 @@
 .App__Signup__Form__Button-Group button:hover {
   cursor: pointer;
   background: linear-gradient(rgb(181, 148, 68) 0%, rgb(202, 159, 86) 49%);  
+}
+
+.App__Invest {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.App__Invest h1.App__Loading-Message {
+  text-align: center;
+  color: #eedb8c;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-family: 'Nevis',sans-serif;  
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@-webkit-keyframes App__Spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes App__Spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@-ms-keyframes App__Spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@-o-keyframes App__Spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes App__Spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+.App__Spinner {
+    -webkit-animation: App__Spinner 2s linear infinite;
+    -moz-animation: App__Spinner 2s linear infinite;
+    -ms-animation: App__Spinner 2s linear infinite;
+    -o-animation: App__Spinner 2s linear infinite;
+    animation: App__Spinner 2s linear infinite;
+    display: block;
+    width: 80px;
+    height: 80px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 80px;
+    border: 15px solid #fa8e2a;
+    border-top-color: rgba(0, 0, 0, 0)
+}
+
+.App__Spinner::after {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 20px;
+    border-color: transparent transparent #fa8e2a transparent;
+    display: block;
+    -webkit-transform: translate(-12px, -13px) rotate(45deg);
+    -moz-transform: translate(-12px, -13px) rotate(45deg);
+    -ms-transform: translate(-12px, -13px) rotate(45deg);
+    -o-transform: translate(-12px, -13px) rotate(45deg);
+    transform: translate(-12px, -13px) rotate(45deg)
+}
+
+.App__Spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -40px 0 0 -40px;
+    z-index: 5000
+}
+
+.App__Overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    z-index: 4000
+}
+
+.App__Overlay p {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -100px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff
+}
+
+.App__Component--Hidden {
+  display: none;
 }

@@ -285,9 +285,15 @@ Sidebar
   background: #222;
 }
 
+#FUNDPAAS-CSS .header-fundpaas-logo, 
+#FUNDPAAS-CSS .header-custom-logo {
+  text-align: center;
+}
+
 #FUNDPAAS-CSS .header-fundpaas-logo img, 
 #FUNDPAAS-CSS .header-custom-logo img {
   border-radius: 3px;
+  width: auto;
 }
 
 #FUNDPAAS-CSS .invOn-workflowStepsView li {
