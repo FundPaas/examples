@@ -319,6 +319,13 @@ Sidebar
   display: none;
 }
 
+#FUNDPAAS-CSS .invOn-loginAsideView nav a[name=termsAndConditions], 
+#FUNDPAAS-CSS .invOn-workflowStepsView nav a[name=termsAndConditions],
+#FUNDPAAS-CSS .invOn-loginAsideView nav a[name=privacyPolicy], 
+#FUNDPAAS-CSS .invOn-workflowStepsView nav a[name=privacyPolicy] {
+  display: block;
+}
+
 /*
 Footer
  */
