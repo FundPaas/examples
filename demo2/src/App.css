@@ -115,6 +115,16 @@
   text-transform: uppercase;
 }
 
+.App__Notification {
+  margin: .5em 0;
+  padding: .5em;
+  background-color: #ffffe0;
+  font-family: 'rufina', sans-serif;
+  font-size: 13px;
+  color: rgb(34, 34, 34);
+  display: none;
+}
+
 .App__Signup__Form {
   color: #fff;
   font-family: 'rufina', sans-serif;
@@ -247,7 +257,7 @@
   line-height: normal;
 }
 
-.App__Button__Submit {
+.App__Signup__Form__Button-Group button {
   border-radius: 3px;
   font-size: 13px;
   letter-spacing: 1px;
@@ -261,17 +271,16 @@
   border-image: initial;
   font-weight: 400;
   outline: none;
-  margin: .5em 0;
+  margin: .5em .5em;
   cursor: pointer;
   display: inline-block;
   line-height: 33px;
   padding: 0 1em;
   min-height: 33px;
-  margin-top: 0;
-  margin-bottom: 0;  
+  width: 120px;
 }
 
-.App__Button__Submit:hover {
+.App__Signup__Form__Button-Group button:hover {
   cursor: pointer;
   background: linear-gradient(rgb(181, 148, 68) 0%, rgb(202, 159, 86) 49%);  
 }

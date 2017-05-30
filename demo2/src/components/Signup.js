@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router';
 
 class Signup extends Component{
   render(){
@@ -7,6 +8,7 @@ class Signup extends Component{
         <div className="App__Signup">
           <h1>Signup</h1>
           <hr />
+          <div className='App__Notification' />
           <table className="App__Signup__Form">
             <thead className='App__Signup__Form__Instructions'>
               <tr>
@@ -94,7 +96,12 @@ class Signup extends Component{
               </tr>
             </tbody>
           </table>
-          <button type="submit" className='App__Button__Submit'>Continue</button>
+          <div className="App__Signup__Form__Button-Group">
+            <Link to='/'>
+              <button>Back</button>
+            </Link>
+            <button type="submit">Continue</button>
+          </div>
         </div>
       </div>
     );
