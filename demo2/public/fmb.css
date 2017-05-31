@@ -319,10 +319,10 @@ Sidebar
   display: none;
 }
 
-#FUNDPAAS-CSS .invOn-loginAsideView nav a[name=termsAndConditions], 
-#FUNDPAAS-CSS .invOn-workflowStepsView nav a[name=termsAndConditions],
-#FUNDPAAS-CSS .invOn-loginAsideView nav a[name=privacyPolicy], 
-#FUNDPAAS-CSS .invOn-workflowStepsView nav a[name=privacyPolicy] {
+#FUNDPAAS-CSS.fundpaas-widget-invOn__inlineContainer.invOn--inline .invOn-loginAsideView nav a[name=termsAndConditions], 
+#FUNDPAAS-CSS.fundpaas-widget-invOn__inlineContainer.invOn--inline .invOn-workflowStepsView nav a[name=termsAndConditions],
+#FUNDPAAS-CSS.fundpaas-widget-invOn__inlineContainer.invOn--inline .invOn-loginAsideView nav a[name=privacyPolicy], 
+#FUNDPAAS-CSS.fundpaas-widget-invOn__inlineContainer.invOn--inline .invOn-workflowStepsView nav a[name=privacyPolicy] {
   display: block;
 }
 
@@ -399,14 +399,22 @@ invOn-investorTypeView
  #FUNDPAAS-CSS .invOn-investorTypeView__additionalChoices {
    font-size: 10px;
  }
+#FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer {
+  background-color: #222;
+  width: 100%;
+  position: relative;
+}
 
- #FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer {
+ #FUNDPAAS-CSS.fundpaas-widget-invOn__inlineContainer.invOn--inline .invOn-investorTypeView__choiceContainer {
    background-color: #000;
    width: 100%;
    position: relative;
  }
+#FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer:hover {
+  background-color: #222;
+}
 
- #FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer:hover {
+ #FUNDPAAS-CSS.fundpaas-widget-invOn__inlineContainer.invOn--inline .invOn-investorTypeView__choiceContainer:hover {
    background-color: #000;
  }
 
