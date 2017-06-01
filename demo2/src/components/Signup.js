@@ -218,23 +218,48 @@ class Signup extends Component{
 
               <tr>
                 <td>
-                  <label htmlFor="city">City</label>
-                  <input type="text" name="city" id="city" data-label='City' />
-                </td>
-                <td className='App__Signup__Form__Col--2'>
                   <div>
-                    <label htmlFor="usState">State</label>
-                    <select name="usState" id="usState" data-label='State' className='App__Signup__Form__Col--2--Shift'>
-                      <option selected disabled value=""></option><option value="AL">AL</option><option value="AK">AK</option><option value="AZ">AZ</option><option value="AR">AR</option><option value="CA">CA</option><option value="CO">CO</option><option value="CT">CT</option><option value="DE">DE</option><option value="DC">DC</option><option value="FL">FL</option><option value="GA">GA</option><option value="HI">HI</option><option value="ID">ID</option><option value="IL">IL</option><option value="IN">IN</option><option value="IA">IA</option><option value="KS">KS</option><option value="KY">KY</option><option value="LA">LA</option><option value="ME">ME</option><option value="MD">MD</option><option value="MA">MA</option><option value="MI">MI</option><option value="MN">MN</option><option value="MS">MS</option><option value="MO">MO</option><option value="MT">MT</option><option value="NE">NE</option><option value="NV">NV</option><option value="NH">NH</option><option value="NJ">NJ</option><option value="NM">NM</option><option value="NY">NY</option><option value="NC">NC</option><option value="ND">ND</option><option value="OH">OH</option><option value="OK">OK</option><option value="OR">OR</option><option value="PA">PA</option><option value="RI">RI</option><option value="SC">SC</option><option value="SD">SD</option><option value="TN">TN</option><option value="TX">TX</option><option value="UT">UT</option><option value="VT">VT</option><option value="VA">VA</option><option value="WA">WA</option><option value="WV">WV</option><option value="WI">WI</option><option value="WY">WY</option><option value="AS">AS</option><option value="GU">GU</option><option value="MP">MP</option><option value="PR">PR</option><option value="VI">VI</option><option value="FM">FM</option><option value="MH">MH</option><option value="PW">PW</option><option value="AA">AA</option><option value="AE">AE</option><option value="AP">AP</option>
-                    </select>
+                    <label htmlFor="city">City</label>
+                    <input type="text" name="city" id="city" data-label='City' />
                   </div>
-                  <div>
-                    <label htmlFor="postalCode">Zip code</label>
-                    <input type="text" name="postalCode" id="postalCode" data-label='Zip code' />
+                  <div className='App__Signup__Form__Col--2--Clearfix'>
+                    <div>
+                      <label htmlFor="usState">State</label>
+                      <select name="usState" id="usState" data-label='State' className='App__Signup__Form__Col--2--Shift'>
+                        <option selected disabled value=""></option><option value="AL">AL</option><option value="AK">AK</option><option value="AZ">AZ</option><option value="AR">AR</option><option value="CA">CA</option><option value="CO">CO</option><option value="CT">CT</option><option value="DE">DE</option><option value="DC">DC</option><option value="FL">FL</option><option value="GA">GA</option><option value="HI">HI</option><option value="ID">ID</option><option value="IL">IL</option><option value="IN">IN</option><option value="IA">IA</option><option value="KS">KS</option><option value="KY">KY</option><option value="LA">LA</option><option value="ME">ME</option><option value="MD">MD</option><option value="MA">MA</option><option value="MI">MI</option><option value="MN">MN</option><option value="MS">MS</option><option value="MO">MO</option><option value="MT">MT</option><option value="NE">NE</option><option value="NV">NV</option><option value="NH">NH</option><option value="NJ">NJ</option><option value="NM">NM</option><option value="NY">NY</option><option value="NC">NC</option><option value="ND">ND</option><option value="OH">OH</option><option value="OK">OK</option><option value="OR">OR</option><option value="PA">PA</option><option value="RI">RI</option><option value="SC">SC</option><option value="SD">SD</option><option value="TN">TN</option><option value="TX">TX</option><option value="UT">UT</option><option value="VT">VT</option><option value="VA">VA</option><option value="WA">WA</option><option value="WV">WV</option><option value="WI">WI</option><option value="WY">WY</option><option value="AS">AS</option><option value="GU">GU</option><option value="MP">MP</option><option value="PR">PR</option><option value="VI">VI</option><option value="FM">FM</option><option value="MH">MH</option><option value="PW">PW</option><option value="AA">AA</option><option value="AE">AE</option><option value="AP">AP</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label htmlFor="postalCode">Zip code</label>
+                      <input type="text" name="postalCode" id="postalCode" data-label='Zip code' />
+                    </div>
+                  </div>
+                </td>
+                <td className='App__Signup__Form__Investment-Amount'>
+                  <label className='App__Signup__Form__Investment-Amount__Title'>Investment Amount</label>
+                  <div className='App__Signup__Form__Col--3--Clearfix App__Signup__Form__Badge'>
+                   <div>
+                     <input type="radio" id='gold' name="investmentAmount" value="500" /> 
+                     <label htmlFor='gold' className='App__Signup__Form__Badge--Gold'>
+                       <span>$500</span>
+                     </label>
+                   </div>
+                   <div>
+                     <input type="radio" id='silver' name="investmentAmount" value="200" /> 
+                     <label htmlFor='silver' className='App__Signup__Form__Badge--Silver'>
+                       <span>$200</span>
+                     </label>
+                   </div>
+                   <div>
+                     <input type="radio" id='bronze' name="investmentAmount" value="100" /> 
+                     <label htmlFor='bronze' className='App__Signup__Form__Badge--Bronze'>
+                       <span>$100</span>
+                     </label>
+                   </div>
                   </div>
                 </td>
               </tr>
-
+    
               <tr className='App__Signup__Form__Upload-File'>
                 <td colSpan={2}>
                   <label>Driver's license</label>

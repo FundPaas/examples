@@ -188,6 +188,19 @@
   outline: none;
 }
 
+.App__Signup__Form input[type='radio'] {
+  display: none;  
+}
+
+.App__Signup__Form__Investment-Amount {
+  position: relative;
+}
+
+.App__Signup__Form__Investment-Amount label.App__Signup__Form__Investment-Amount__Title {
+  position: absolute;
+  top: 1px;
+}
+
 .App__Signup__Form__Col--2 {
   width: 50%;
 }
@@ -203,7 +216,19 @@
   width: 98%;
 }
 
-.App__Signup__Form__Col--2 select {
+.App__Signup__Form__Col--2--Clearfix:after,
+.App__Signup__Form__Col--3--Clearfix:after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+.App__Signup__Form__Col--2--Clearfix > div {
+  float: left;
+  width: 50%;
+}
+
+.App__Signup__Form__Col--2--Clearfix select {
   box-shadow: inset 0 0 0 1px #ddd;
   margin: 0;
   border-radius: 0;
@@ -220,6 +245,78 @@
   border: none;
   outline: none;
   font-family: 'rufina', sans-serif;
+  width: 98%;
+}
+
+.App__Signup__Form__Col--3--Clearfix > div {
+  float: left;
+  width: 33.333332%;
+}
+
+.App__Signup__Form__Badge {
+  font-family: 'nevis', sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+}
+
+.App__Signup__Form__Badge input:checked + label > span {
+  color: #222;
+  font-size: 16px;
+}
+
+.App__Signup__Form__Badge label {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 50%;
+  position: relative; 
+}
+
+.App__Signup__Form__Badge--Gold {
+  background: linear-gradient(rgb(238, 219, 140) 0%, rgb(202, 159, 86) 49%, rgb(181, 148, 68) 100%);
+  border: 5px solid rgb(206, 169, 107);
+}
+
+.App__Signup__Form__Badge--Silver {
+  background: linear-gradient(#ebeded 0%, #b9babe 49%, #a2a3a7 100%);
+  border: 5px solid silver;
+}
+
+.App__Signup__Form__Badge--Bronze {
+  background: linear-gradient(#f79500 0%, #d26101 49%, #b84300 100%);
+  border: 5px solid #cd7f32;
+}
+
+.App__Signup__Form__Badge--Gold:hover {
+  background: linear-gradient(rgb(202, 159, 86) 49%, rgb(181, 148, 68) 100%);
+  font-size: 16px;
+}
+
+.App__Signup__Form__Badge--Silver:hover {
+  background: linear-gradient(#b9babe 49%, #a2a3a7 100%);
+  font-size: 16px;
+}
+
+.App__Signup__Form__Badge--Bronze:hover {
+  background: linear-gradient(#d26101 49%, #b84300 100%);
+  font-size: 16px;
+}
+
+.App__Signup__Form__Badge--Gold:active,
+.App__Signup__Form__Badge--Silver:active,
+.App__Signup__Form__Badge--Bronze:active {
+  top: 2px;
+}
+
+.App__Signup__Form__Badge label > span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 .App__Signup__Form__Upload-File input {
