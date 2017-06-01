@@ -643,8 +643,8 @@ invOn-nonAccreditedInvestorView
 }
 
 #FUNDPAAS-CSS.fundpaas-widget-invOn__inlineContainer.invOn--inline .invOn-twoColumnLayoutView__asideRegion,
-#FUNDPAAS-CSS table.fundpaas-core-table--solidLightBackdrop, 
-#FUNDPAAS-CSS table.fundpaas-core-form.fundpaas-core-form--labelAbove label, 
-#FUNDPAAS-CSS table.fundpaas-core-form .fundpaas-core-form__instructions td {
+#FUNDPAAS-CSS.fundpaas-widget-invOn__inlineContainer.invOn--inline table.fundpaas-core-table--solidLightBackdrop, 
+#FUNDPAAS-CSS.fundpaas-widget-invOn__inlineContainer.invOn--inline table.fundpaas-core-form.fundpaas-core-form--labelAbove label, 
+#FUNDPAAS-CSS.fundpaas-widget-invOn__inlineContainer.invOn--inline table.fundpaas-core-form .fundpaas-core-form__instructions td {
   background-color: #000;
 }
