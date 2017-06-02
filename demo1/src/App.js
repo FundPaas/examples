@@ -26,12 +26,19 @@ class App extends Component {
                  <button className='App__Button'>LEARN MORE</button>
               </a>
             {/* fmb */}
+            {/*            
               <button className='App__Button fundpaas-widget-invOn__investButton'
                       type="button" 
                       data-offering-id="INVOFF-7QQFGEJINNUK2" 
                       disabled
               >INVEST</button>
-             {/*<button className='App__Button'>INVEST</button>*/}
+            */}
+            {/* reg c */}
+              <button className="App__Button fundpaas-widget-invOn__investButton" 
+                      type="button" 
+                      data-offering-id="INVOFF-617VNXPSNUV58" 
+                      disabled
+              >INVEST</button>
             </div>
           </div>
         </div>
