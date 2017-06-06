@@ -43,7 +43,12 @@ class App extends Component {
               >INVEST</button>
               */}
             {/* staging */}
-              <button type="button" className="App__Button fundpaas-widget-invOn__investButton" data-offering-id="INVOFF-VD9Z8HU24FGJT" disabled>Invest</button>
+              <button className="App__Button fundpaas-widget-invOn__investButton" 
+                      type="button"
+                      data-offering-id="INVOFF-X42ZIPB5A237R" 
+                      disabled
+              >INVEST</button>
+
             </div>
           </div>
         </div>
